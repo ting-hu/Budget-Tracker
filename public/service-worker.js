@@ -13,7 +13,7 @@ const FILES_TO_CACHE = [
     "./public/js/index.js"
 ]
 
-const APP_PREFIX = 'BudgetTracker-';
+const APP_PREFIX = 'Budget-Tracker';
 const VERSION = 'version_01';
 const CACHE_NAME = APP_PREFIX + VERSION;
 
