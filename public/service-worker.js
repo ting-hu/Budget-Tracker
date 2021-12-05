@@ -1,4 +1,5 @@
 const FILES_TO_CACHE = [
+    "/",
     "./public/index.html",
     "./public/css/styles.css",
     "./public/icons/icon-72x72.png",
@@ -10,13 +11,17 @@ const FILES_TO_CACHE = [
     "./public/icons/icon-384x384.png",
     "./public/icons/icon-512x512.png",
     "./public/js/db.js",
-    "./public/js/index.js"
+    "./public/js/index.js",
+    "./public/manifest.json"
 ]
 
-const APP_PREFIX = 'Budget-Tracker';
-const VERSION = 'version_01';
-const CACHE_NAME = APP_PREFIX + VERSION;
+// const APP_PREFIX = 'Budget-Tracker';
+// const VERSION = 'Budget-Tracker';
+// const CACHE_NAME = APP_PREFIX + VERSION;
 
+const STATIC_CACHE = "static-cache-v1";
+const RUNTIME_CACHE = "runtime-cache";
+const CACHE_NAME = STATIC_CACHE + RUNTIME_CACHE;
 
 // Install the service worker
 // YOUR CODE HERE
