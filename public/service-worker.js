@@ -15,13 +15,13 @@ const FILES_TO_CACHE = [
     "./manifest.json"
 ]
 
-// const APP_PREFIX = 'Budget-Tracker';
-// const VERSION = 'Budget-Tracker';
-// const CACHE_NAME = APP_PREFIX + VERSION;
+const APP_PREFIX = 'Budget-Tracker';
+const VERSION = 'Budget-Tracker';
+const CACHE_NAME = APP_PREFIX + VERSION;
 
-const STATIC_CACHE = "static-cache-v1";
-const RUNTIME_CACHE = "runtime-cache";
-const CACHE_NAME = STATIC_CACHE + RUNTIME_CACHE;
+// const STATIC_CACHE = "static-cache-v1";
+// const RUNTIME_CACHE = "runtime-cache";
+// const CACHE_NAME = STATIC_CACHE + RUNTIME_CACHE;
 
 // Install the service worker
 // YOUR CODE HERE
