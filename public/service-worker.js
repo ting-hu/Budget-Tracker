@@ -15,8 +15,8 @@ const FILES_TO_CACHE = [
     "./manifest.json"
 ]
 
-const APP_PREFIX = 'Budget-Tracker';
-const VERSION = 'Budget-Tracker';
+const APP_PREFIX = 'budget-tracker';
+const VERSION = 'budget-tracker';
 const CACHE_NAME = APP_PREFIX + VERSION;
 
 // const STATIC_CACHE = "static-cache-v1";
