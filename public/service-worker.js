@@ -19,13 +19,6 @@ const APP_PREFIX = 'budget-tracker';
 const VERSION = 'budget-tracker';
 const CACHE_NAME = APP_PREFIX + VERSION;
 
-// const STATIC_CACHE = "static-cache-v1";
-// const RUNTIME_CACHE = "runtime-cache";
-// const CACHE_NAME = STATIC_CACHE + RUNTIME_CACHE;
-
-// Install the service worker
-// YOUR CODE HERE
-//
 self.addEventListener('install', function(evt) {
   evt.waitUntil(
       caches.open(CACHE_NAME).then(function(cache) {
@@ -35,8 +28,7 @@ self.addEventListener('install', function(evt) {
   );
   self.skipWaiting();
 })
-// Activate the service worker and remove old data from the cache
-// YOUR CODE HERE
+
 self.addEventListener('activate', function(evt) {
   evt.waitUntil(
       caches.keys().then(keyList => {
@@ -53,9 +45,6 @@ self.addEventListener('activate', function(evt) {
   self.clients.claim()
 })
 
-// Intercept fetch requests
-// YOUR CODE HERE
-//
 self.addEventListener('fetch', function(evt) {
   if (evt.request.url.includes('/api/')) {
       evt.respondWith(

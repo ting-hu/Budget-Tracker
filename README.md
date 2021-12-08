@@ -6,6 +6,9 @@ The application is to provide a PWA to the pre-build budget tracker application.
 ## Installation
 Click on the deploy link.
 
+## Screenshot
+![screenshot_1](./public/screenshots/screenshot.png)
+
 ## Built With
 - Node.js
 - Express.js
